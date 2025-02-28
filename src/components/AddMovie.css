@@ -1,0 +1,116 @@
+/* Container Styling */
+.add-movie-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(124, 105, 105, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Heading Styling */
+  .add-movie-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Form Styling */
+  .add-movie-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-movie-form label {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #444;
+  }
+  
+  .add-movie-form input,
+  .add-movie-form select,
+  .add-movie-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .add-movie-form input:focus,
+  .add-movie-form select:focus,
+  .add-movie-form textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+  }
+  
+  /* Textarea Styling */
+  .add-movie-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Button Styling */
+  .add-movie-btn,
+  .cancel-btn {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Submit Button */
+  .add-movie-btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .add-movie-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+  }
+  
+  /* Cancel Button */
+  .cancel-btn {
+    background-color: #ff4b5c;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
